@@ -1,0 +1,75 @@
+body{
+    font-size: 18px;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-header.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: 0% 75%;
+    background-size: cover;
+    height: 500px;
+}
+h1{
+    font-family: Fraunces;
+    font-size: 60px;
+    letter-spacing: 10px;
+
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    text-align: center;
+}
+h2{
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 50px;
+}
+.menu__container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.card{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+.card__info{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card__image{
+    width: 50%;
+}
+.card__container--Graphic{
+    width: 50%;
+    background-image: url('https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-graphic-design.jpg?raw=true');
+}
+.card__container--Photography{
+    width: 50%;
+    height: 500px;
+    background-image: url('https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-photography.jpg?raw=true');
+}
+.card__info div p{
+    line-height: 2;
+    color: hsl(210, 4%, 67%);
+
+}
+.card__img--4x{
+    width: 25%;
+}
+footer{
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(168, 34%, 41%);
+    height: 500px;
+}

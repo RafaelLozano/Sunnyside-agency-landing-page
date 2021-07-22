@@ -9,37 +9,79 @@
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./index.css" >
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header>
+    <div class="menu__container">
+      <!-- <p>sunnyside</p> -->
+      <img src="https://raw.githubusercontent.com/RafaelLozano/Sunnyside-agency-landing-page/6cfeed22b741a56f72ed249a9ac5789732d3d23f/src/images/logo.svg" alt="">
+      <nav>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
+      </nav>
+    </div>
+    
+    <h1>WE ARE CREATIVES</h1>
+    <img style="width: 50px;" src="https://raw.githubusercontent.com/RafaelLozano/Sunnyside-agency-landing-page/6cfeed22b741a56f72ed249a9ac5789732d3d23f/src/images/icon-arrow-down.svg" alt="">
+    <!-- <img src="https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-header.jpg?raw=true" alt=""> -->
+  </header>
+  <section class="card">
+    <div class="card__info">
+      <div style="width: 80%;">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <span>Learn more</span>
+      </div>
+    </div>
+    <img class="card__image" src="https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-transform.jpg?raw=true" alt="egg">
+  </section>
 
-  We are creatives
+  <section class="card">
+    <img class="card__image" src="https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-stand-out.jpg?raw=true" alt="egg">
+    <div class="card__info">
+      <div style="width: 80%;">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <span>Learn more</span>
+      </div>
+    </div>
+  </section>
 
-  Transform your brand
+  <section class="card" >
+    <div class="card__container--Graphic">
+      <h3>Graphic design</h3>
+      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </div>
+    <div class="card__container--Photography" ">
+      <h3>Photography</h3>
+      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>      
+    </div>
+  </section>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
 
-  Learn more
+  
+  
 
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+  
+  
 
   Client testimonials
 
@@ -54,11 +96,20 @@
   Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
   Jennie F.
   Business Owner
-
-  About
+  <section style="display: flex;flex-direction: row;margin: 0;">
+    <img src="https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-gallery-milkbottles.jpg?raw=true" class="card__img--4x" alt="milk"></div>
+    <img src="https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-gallery-orange.jpg?raw=true" class="card__img--4x" alt="orange"></div>
+    <img src="https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-gallery-cone.jpg?raw=true" class="card__img--4x" alt="cone"></div>
+    <img src="https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-gallery-sugarcubes.jpg?raw=true" class="card__img--4x" alt="sugar"></div>
+  </section>
+  <footer>
+    <img src="https://raw.githubusercontent.com/RafaelLozano/Sunnyside-agency-landing-page/6cfeed22b741a56f72ed249a9ac5789732d3d23f/src/images/logo.svg" alt="">
+    About
   Services
   Projects
   Contact
+  </footer>
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
