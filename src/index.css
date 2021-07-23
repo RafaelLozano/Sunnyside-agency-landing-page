@@ -94,6 +94,7 @@ h3{
 }
 .card__img--back{
     z-index: -1;
+    width: 100%;
   
 }
 .card__info--float{
@@ -109,9 +110,44 @@ h3{
 }
 .card__info--float p{
     line-height: 1.5;
-
+}
+.testimonial__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.testimonials__container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.testimonials__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 0 20px;
+}
+.testimonial__profile{
+    width: 80px;
+    border-radius: 40px;
+}
+.testimonial__section h4{
+    font-size: 25px;
+    font-family: barlow;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 5px;
 }
 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin: 0px;
     padding: 0px;
     background-color: hsl(168, 34%, 41%);
