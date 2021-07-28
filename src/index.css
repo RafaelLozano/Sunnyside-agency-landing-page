@@ -1,3 +1,7 @@
+:root{
+    --color-text-graphicDesign:hsl(167, 40%, 24%);
+    --footer-background-color:hsl(168, 34%, 41%)
+}
 body{
     font-size: 18px;
     margin: 0;
@@ -151,7 +155,7 @@ footer{
     align-items: center;
     margin: 0px;
     padding: 0px;
-    background-color: hsl(168, 40%, 51%);
+    background-color: var(--footer-background-color);
     height: 500px;
 }
 .contact__container{
