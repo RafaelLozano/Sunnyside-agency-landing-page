@@ -60,6 +60,12 @@
         width: 100%;
         margin: 0;
     }
+    .card--reverse{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
     .card__info div{
         display: flex;
         width: 80%;
@@ -152,6 +158,13 @@
     }
     .card{
         display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+    }
+    .card--reverse{
+        display: flex;
+        flex-direction: row;
         width: 100%;
         margin: 0;
     }
