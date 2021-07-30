@@ -3,12 +3,16 @@
     --footer-background-color:hsl(168, 34%, 41%);
     --White: hsl(0, 0%, 100%);
     --Gray:hsl(210, 4%, 67%);
+    --Yellow:hsl(51, 100%, 49%);
+    --SoftRed: hsl(7, 99%, 70%);
+    --DarkCyan:hsl(167, 40%, 24%);
+    --DarkModerateCyan:hsl(168, 34%, 41%);
+
 }
 @media (max-width: 375px) {
      header{
         display: flex;
         align-items: center;
-        
         width: 100%;
         height: 95vh;
         flex-direction: column;
@@ -87,7 +91,7 @@
         width: 100%;
     }
     .card__img--4x{
-        width: 25%;
+        width: 25%;  
     }
     .card__img--back{
         width: 100%;
@@ -104,7 +108,7 @@
         background-repeat: no-repeat;
         background-position: 0% 75%;
         background-size: cover;
-        height: 500px;
+        height: 100vh;
     }
     .menu__hamburger{
         display: none;
@@ -120,27 +124,29 @@
     .a__button{
         background-color: hsl(0, 0%, 100%);
         color: hsl(212, 27%, 19%);
-        padding: 10px 20px;
-        border-radius: 20PX;
+        padding: 15px 20px;
+        border-radius: 25PX;
         font-weight: bold;
     }
     .a__button:hover{
         color:var(--White) ;
         background-color: hsla(0, 0%, 100%, 0.20) ;
     }
-    h1{
+    header h1{
         font-family: Fraunces;
         font-size: 3rem;
         letter-spacing: 10px;
         font-weight: 700;
         color: hsl(0, 0%, 100%);
-        margin-top: 60px;
+        margin-top: 90px;
+        margin-bottom: 90px;
         text-align: center;
     }
     h2{
         font-family: Fraunces;
         font-weight: 900;
-        font-size: 50px;
+        font-size: 60px;
+        margin-bottom: 24px;
     }
     h3{
         font-family: Fraunces;
@@ -175,6 +181,11 @@
         justify-content: center;
         align-items: center;
     }
+    .card__info--desktop{
+        
+        flex-direction: column;
+        width: 70%;
+    }
     .card__image{
         width: 50%;
     }
@@ -191,9 +202,16 @@
         background-image: url('https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-photography.jpg?raw=true');
     }
     .card__info div p{
-        line-height: 2;
+        line-height: 1.8;
+        font-size: x-large;
         color: hsl(210, 4%, 67%);
-
+    }
+    .card__info div a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black ; 
+        font-family: Fraunces;   
+        font-weight: 900;  
     }
     .card__img--4x{
         width: 25%;
@@ -228,6 +246,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 60px 0;
     }
     .testimonials__card{
         display: flex;
@@ -240,11 +259,20 @@
     .testimonials__card label{
         font-family: Fraunces;
         font-weight: 900;
-        
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    .testimonials__card p{
+        font-size: 22px;
+        line-height: 1.8;
+        text-align: center;
+        margin: 80px 0;
+        letter-spacing: 1.5px;
     }
     .testimonials__card span{
         color:var(--Gray) ;
-        font-size: medium;
+        font-size: 20px;
     }
     .testimonial__profile{
         width: 80px;
@@ -266,7 +294,7 @@
         align-items: center;
         margin: 0px;
         padding: 0px;
-        background-color: var(--footer-background-color);
+        background-color: var(--DarkModerateCyan);
         height: 500px;
     }
     .contact__container{
@@ -282,14 +310,37 @@
         color: var(--White) ;
     }
     .social__icon{
-        margin:0 10px
+        margin:0 10px;
+        width: 30px;
     }
     .social__icon:hover{
         filter: invert(100%) sepia(61%) saturate(2%) hue-rotate(7deg) brightness(106%) contrast(101%);
+    }
+    .images__container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .card__img--4x{
+        width: 25%;  
     }
     
 }
 body{
     font-size: 18px;
     margin: 0;
+}
+.card__link--yellow:hover{
+    border-bottom: var(--Yellow) 5px solid;
+}
+.card__link--softRed:hover{
+    border-bottom: var(--SoftRed) 5px solid;
+}
+footer a{
+    color: var(--DarkCyan);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--White);
+    
 }
