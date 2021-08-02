@@ -6,7 +6,7 @@
     --Yellow:hsl(51, 100%, 49%);
     --SoftRed: hsl(7, 99%, 70%);
     --DarkCyan:hsl(167, 40%, 24%);
-    --DarkModerateCyan:hsl(168, 34%, 41%);
+    --DarkModerateCyan:#90D4C6;
 
 }
 @media (max-width: 375px) {
@@ -42,7 +42,7 @@
         letter-spacing: 10px;
         font-weight: 900;
         color: hsl(0, 0%, 100%);
-        margin-top: 60px;
+        margin-top: 100px;
         text-align: center;
     }
   
@@ -96,6 +96,69 @@
     .card__img--back{
         width: 100%;
     }
+    .card__container{
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    .card__img--back{
+        position: relative;
+        
+    }
+     .card__info--float{
+        position: absolute;
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        margin-top: 50%;
+        
+    }
+    .testimonial__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+    }
+    .testimonials__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 10% 5%;
+    }
+    .testimonials__card label{
+        font-family: Fraunces;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    .testimonials__card p{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 10px 0;
+        
+    }
+    .testimonials__card span{
+        color:var(--Gray) ;
+        font-size: 20px;
+    }
+    .testimonial__profile{
+        width: 80px;
+        border-radius: 40px;
+    }
+    .testimonial__section h4{
+        
+        font-family: barlow;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: hsl(210, 4%, 67%);
+        letter-spacing: 5px;
+        margin: 60px 0;
+    }
     
 }
 @media (min-width:400px) {
@@ -103,10 +166,10 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-top: 30px;
+        padding-top: 50px;
         background-image: url('https://github.com/RafaelLozano/Sunnyside-agency-landing-page/blob/main/src/images/desktop/image-header.jpg?raw=true');
         background-repeat: no-repeat;
-        background-position: 0% 75%;
+        background-position-x: center;
         background-size: cover;
         height: 100vh;
     }
@@ -119,7 +182,7 @@
     nav a{
         color:hsl(0, 0%, 100%);
         text-decoration: none;
-        margin: 0 15px;
+        margin: 0 30px;
     }
     .a__button{
         background-color: hsl(0, 0%, 100%);
@@ -134,12 +197,11 @@
     }
     header h1{
         font-family: Fraunces;
-        font-size: 3rem;
+        font-size: 80px;
         letter-spacing: 10px;
         font-weight: 700;
         color: hsl(0, 0%, 100%);
-        margin-top: 90px;
-        margin-bottom: 90px;
+        margin: 150px;
         text-align: center;
     }
     h2{
@@ -191,9 +253,7 @@
     }
     .card__container{
         display: flex;
-        flex-direction: column;
-        align-items:center ;
-        justify-content: center;
+        position: relative;
         width: 50%;
     }
     .card__container--Photography{
@@ -217,19 +277,15 @@
         width: 25%;
     }
     .card__img--back{
-        z-index: -1;
+        position: relative;
         width: 100%;
-    
     }
     .card__info--float{
-        display: flex;
-        height: 100%;
-        width: 30%;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items:center ;
         position: absolute;
-        padding-bottom: 150px;
+        text-align: center;
+        width: 50%;
+        margin: 0 25%;
+        margin-top: 50%;
         
     }
     .card__info--float p{
@@ -339,8 +395,9 @@ body{
 footer a{
     color: var(--DarkCyan);
     text-decoration: none;
+    margin: 0 20px;
 }
-footer a:hover{
-    color: var(--White);
-    
-}
+
+footer .social-links a:hover {
+    filter: brightness(0) invert(1);
+  }
